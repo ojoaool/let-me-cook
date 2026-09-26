@@ -7275,7 +7275,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BackgroundTransparency = 1,
                     Size = UDim2New(1, 0, 1, 0),
                     Position = UDim2New(0, 0, 0, 0),
-                    Image = "rbxassetid://SEU_ID_AQUI",
+                    Image = "rbxassetid://92771147780280",
                     ImageTransparency = 0.35,
                     ScaleType = Enum.ScaleType.Crop,
                     ZIndex = 2,
@@ -7288,7 +7288,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     Name = "\0",
                     CornerRadius = UDimNew(0, 5)
                 })
-                
+
 
                 Instances:Create("UICorner", {
                     Parent = Items["MainFrame"].Instance,
