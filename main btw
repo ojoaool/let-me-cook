@@ -7376,7 +7376,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderSizePixel = 0,
                     AutomaticSize = Enum.AutomaticSize.X,
                     BackgroundColor3 = FromRGB(255, 255, 255)
-                })  Items["Title"]:AddToTheme({TextColor3 = "Text"})
+                })  
 
                 Items["Version"] = Instances:Create("Frame", {
                     Parent = Items["Title"].Instance,
