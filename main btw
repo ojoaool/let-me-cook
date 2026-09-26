@@ -130,10 +130,12 @@ end
 local ESPFonts = { }
 local SelectedESPFont
 
-local Options, MiscOptions do
+local Options, MiscOptions
+do
     if getgenv().Esp then 
         getgenv().Esp.Unload()
     end 
+     
 
     local Workspace = cloneref(game:GetService("Workspace"))
     local RunService = cloneref(game:GetService("RunService"))
@@ -1427,7 +1429,8 @@ end
 
 
 -- beware of somewhat horrible code
-local Library do
+local Library
+do
     -- Services
     local Players = game:GetService("Players")
     local UserInputService = game:GetService("UserInputService")
