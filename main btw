@@ -132,9 +132,9 @@ local SelectedESPFont
 
 local Options, MiscOptions
 do
-    if getgenv().Esp then 
-        getgenv().Esp.Unload()
-    end 
+if getgenv().Esp and getgenv().Esp.Unload then
+    getgenv().Esp.Unload()
+end
      
 
     local Workspace = cloneref(game:GetService("Workspace"))
@@ -1430,6 +1430,7 @@ end
 
 -- beware of somewhat horrible code
 local Library
+do
     -- Services
     local Players = game:GetService("Players")
     local UserInputService = game:GetService("UserInputService")
