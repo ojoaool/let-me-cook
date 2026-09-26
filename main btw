@@ -7255,10 +7255,10 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     Parent = Items["MainFrame"].Instance,
                     Name = "\0",
                     BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0.5, 0),
+                    AnchorPoint = Vector2New(0.5, 1),
                     BorderSizePixel = 0,
-                    Position = UDim2New(0.5, 0, 1, 8),
-                    Size = UDim2New(0, 0, 0, 45),
+                    Position = UDim2New(0.5, 0, 1, -8),
+                    Size = UDim2New(0, 0, 0, 42),
                     ZIndex = 2,
                     AutomaticSize = Enum.AutomaticSize.X,
                     BackgroundColor3 = FromRGB(16, 18, 21)
@@ -7498,7 +7498,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderColor3 = FromRGB(0, 0, 0),
                     BackgroundTransparency = 1,
                     Position = UDim2New(0, 0, 0, 35),
-                    Size = UDim2New(1, 0, 1, -35),
+                    Size = UDim2New(1, 0, 1, -85),
                     ClipsDescendants = true,
                     ZIndex = 2,
                     BorderSizePixel = 0,
@@ -7717,8 +7717,8 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     Name = "\0",
                     BorderColor3 = FromRGB(0, 0, 0),
                     BackgroundTransparency = 1,
-                    Position = UDim2New(0, 7, 0, 48),
-                    Size = UDim2New(1, -14, 1, -55),
+                                       Position = UDim2New(0, 7, 0, 8),
+                    Size = UDim2New(1, -14, 1, -16),
                     ZIndex = 2,
                     BorderSizePixel = 0,
                     BackgroundColor3 = FromRGB(255, 255, 255)
@@ -7833,16 +7833,16 @@ CustomFont:New("ComicSans", 400, "Regular", {
                 end
 
                 if Page.SubPages then 
-                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -108)
+                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -62)
 
                     Items["SubPages"] = Instances:Create("Frame", {
                         Parent = Items["PageContent"].Instance,
                         Name = "\0",
                         BorderColor3 = FromRGB(0, 0, 0),
-                        AnchorPoint = Vector2New(0.5, 1),
+                        AnchorPoint = Vector2New(0.5, 0),
                         BorderSizePixel = 0,
-                        Position = UDim2New(0.5, 0, 1, -8),
-                        Size = UDim2New(0, 0, 0, 45),
+                        Position = UDim2New(0.5, 0, 0, 8),
+                        Size = UDim2New(0, 0, 0, 40),
                         ZIndex = 2,
                         AutomaticSize = Enum.AutomaticSize.X,
                         BackgroundColor3 = FromRGB(22, 25, 29)
