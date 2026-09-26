@@ -5471,6 +5471,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderColor3 = FromRGB(0, 0, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
+                    BackgroundTransparency = 1, 
                     BackgroundColor3 = FromRGB(22, 25, 29)
                 })  Items["Topbar"]:AddToTheme({BackgroundColor3 = "Inline"})
 
@@ -5488,30 +5489,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     CornerRadius = UDimNew(0, 5)
                 })
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 3),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(22, 25, 29)
-                }):AddToTheme({BackgroundColor3 = "Inline"})
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    BackgroundTransparency = 0.4000000059604645,
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 1),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(32, 36, 42)
-                }):AddToTheme({BackgroundColor3 = "Border"})
 
                 Instances:Create("UIGradient", {
                     Parent = Items["Topbar"].Instance,
@@ -6312,30 +6290,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     CornerRadius = UDimNew(0, 5)
                 })
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 3),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(22, 25, 29)
-                }):AddToTheme({BackgroundColor3 = "Inline"})
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    BackgroundTransparency = 0.4000000059604645,
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 1),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(32, 36, 42)
-                }):AddToTheme({BackgroundColor3 = "Border"})
 
                 Instances:Create("UIGradient", {
                     Parent = Items["Topbar"].Instance,
@@ -7265,7 +7220,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderSizePixel = 0,
                     Visible = false,
                     BackgroundColor3 = FromRGB(16, 18, 21)
-                })  Items["MainFrame"]:AddToTheme({BackgroundColor3 = "Background"})
+                })  Items["MainFrame"].Instance.BackgroundTransparency = 0
 
                 Items["MainFrame"]:MakeDraggable()
                 Items["MainFrame"]:MakeResizeable(Vector2New(Window.Size.X.Offset, Window.Size.Y.Offset), Vector2New(9999, 9999))
@@ -7366,6 +7321,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderColor3 = FromRGB(0, 0, 0),
                     ZIndex = 2,
                     BorderSizePixel = 0,
+                    BackgroundTransparency = 1, 
                     BackgroundColor3 = FromRGB(22, 25, 29)
                 })  Items["Topbar"]:AddToTheme({BackgroundColor3 = "Inline"})
 
@@ -7375,30 +7331,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     CornerRadius = UDimNew(0, 5)
                 })
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 3),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(22, 25, 29)
-                }):AddToTheme({BackgroundColor3 = "Inline"})
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    BackgroundTransparency = 0.4,
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 1),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(32, 36, 42)
-                }):AddToTheme({BackgroundColor3 = "Border"})
 
                 Instances:Create("UIGradient", {
                     Parent = Items["Topbar"].Instance,
@@ -9185,17 +9118,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     return RGBSequence{RGBSequenceKeypoint(0, FromRGB(255, 255, 255)), RGBSequenceKeypoint(1, Library.Theme["Dark Gradient"])}
                 end})
 
-                Instances:Create("Frame", {
-                    Parent = Items["Topbar"].Instance,
-                    Name = "\0",
-                    BorderColor3 = FromRGB(0, 0, 0),
-                    AnchorPoint = Vector2New(0, 1),
-                    Position = UDim2New(0, 0, 1, 0),
-                    Size = UDim2New(1, 0, 0, 3),
-                    ZIndex = 2,
-                    BorderSizePixel = 0,
-                    BackgroundColor3 = FromRGB(22, 25, 29)
-                }):AddToTheme({BackgroundColor3 = "Inline"})
+
 
                 Items["Title"] = Instances:Create("TextLabel", {
                     Parent = Items["Topbar"].Instance,
