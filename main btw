@@ -2274,10 +2274,10 @@ CustomFont:New("ComicSans", 400, "Regular", {
         return getcustomasset(self.Folders.Assets .. "/" .. ImageData[1])
     end
 
-    Library.Round = function(self, Number, Float)
-        local Multiplier = 1 / (Float or 1)
-        return MathFloor(Number * Multiplier) / Multiplier
-    end
+Library.Round = function(self, Number, Float)
+    local Multiplier = 1 / ((Float and Float ~= 0) and Float or 1)
+    return MathFloor(Number * Multiplier) / Multiplier
+end
 
     Library.Thread = function(self, Function)
         local NewThread = coroutine.create(Function)
