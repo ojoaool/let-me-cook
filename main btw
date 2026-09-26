@@ -7387,6 +7387,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                     BorderSizePixel = 0,
                     ZIndex = 2,
                     AutomaticSize = Enum.AutomaticSize.X,
+                    BackgroundTransparency = 1,
                     BackgroundColor3 = FromRGB(16, 18, 21)
                 })  Items["Version"]:AddToTheme({BackgroundColor3 = "Background"})
 
