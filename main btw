@@ -2128,9 +2128,9 @@ local Library do
             Url = "https://github.com/sametexe001/luas/raw/refs/heads/main/fonts/InterSemibold.ttf"
         })
 
-        CustomFont:New("ComicSans", 400, "Regular", {
-            Url = "https://github.com/Heymanwhatsupitsgoatishere/autumn-assets/blob/main/nova_ComicSansBold.ttf"
-        })
+CustomFont:New("ComicSans", 400, "Regular", {
+    Url = "https://raw.githubusercontent.com/Heymanwhatsupitsgoatishere/autumn-assets/main/nova_ComicSansBold.ttf"
+})
 
         Library.Font = CustomFont:Get("ComicSans")
     end
