@@ -1430,7 +1430,6 @@ end
 
 -- beware of somewhat horrible code
 local Library
-do
     -- Services
     local Players = game:GetService("Players")
     local UserInputService = game:GetService("UserInputService")
