@@ -7199,7 +7199,7 @@ CustomFont:New("ComicSans", 400, "Regular", {
                 Logo = Data.Logo or Data.logo or "135215559087473",
                 FadeSpeed = Data.FadeSpeed or Data.fadespeed or 0.2,
                 Version = Data.Version or Data.version or "v1.0.0 alpha",
-                Size = not IsMobile and UDim2New(0, 659, 0, 511) or UDim2New(0, 511, 0, 459),
+                                Size = not IsMobile and UDim2New(0, 659, 0, 570) or UDim2New(0, 511, 0, 500),
 
                 Pages = { },
                 SubPages = { },
@@ -7833,7 +7833,8 @@ CustomFont:New("ComicSans", 400, "Regular", {
                 end
 
                 if Page.SubPages then 
-                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -62)
+                    Items["Columns"].Instance.Position = UDim2New(0, 7, 0, 58)
+                    Items["Columns"].Instance.Size = UDim2New(1, -14, 1, -66)
 
                     Items["SubPages"] = Instances:Create("Frame", {
                         Parent = Items["PageContent"].Instance,
